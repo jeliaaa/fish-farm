@@ -2,6 +2,7 @@
 
 import React from 'react';
 import './main.scss';
+import { Link } from 'react-router-dom';
 
 const Main = () => {
     const handleScrollDown = () => {
@@ -23,23 +24,23 @@ const Main = () => {
 
             {/* Add content in the scroll target */}
             <div id="scrollTarget" className="scroll_section">
-                <h1>Welcome!</h1>
+                <h1>კეთილი იყოს თქვენი მობრძანება!</h1>
                 <hr />
                 <div className='hero_right'>
                     <div className='left'>
                         <p>
-                            We are StarFish. A Company which mostly operates on the Black Sea coast. We help people to findthe way to develop their
-                            own device for their aquaculture. Fish, sea weed, shrimps, everything! We learn about the species and the environment which are specific for our user
-                            and crate the highly optimised high-tech device for them, it will make the process easier and more comfortable.
+                            ჩვენ ვართ StarFish. კომპანია რომელიც გაძლევთ საშუალებას, დაიწყოთ თევზის მრეწველობა. ჩვენ ვეხმარებით მომხმარებელს მიიღონ ის შედეგი, რომელზეც ოცნებობდნენ. 
+                            თევზი, წყალმცენარეები, ხამანწკები, ყველაფერი! ჩვენ, მომხმარებლის სურვილიდან და სიტუაციიდან გამომდინარე, ვსწავლობთ ყველაფერს და გთავაზობთ ოპტიმალურ გადაწყვეტილებას.
+                            ჩვენი მიდგომა და მოწყობილობა, კომფორტულს ხდის რთულ საქმიანობას.
                         </p>
                         <div className='operating_places'>
-                            <h6>Main Places where we operate for now:</h6>
+                            <h6>სამიზნე ადგილები:</h6>
                             <hr />
                             <ul>
-                                <li>Batumi</li>
-                                <li>Kobuleti</li>
-                                <li>Trabzon</li>
-                                <li>Photi</li>
+                                <li>ბათუმი</li>
+                                <li>ფოთი</li>
+                                <li>ურეკი</li>
+                                <li>სარფი</li>
                             </ul>
                         </div>
                     </div>
@@ -49,21 +50,16 @@ const Main = () => {
                 </div>
             </div>
             <div className="species">
-                <div className="card">
-                    <i className="fa-solid fa-shrimp"></i>
-                    <span>Shrimps</span>
+                <Link to={'/rectangle'} className="card">
+                    <i className="fa-solid fa-square"></i>
+                    <span style={{marginTop:30}}>კვადრატული ფორმა</span>
                     <span className='view'>View</span>
-                </div>
-                <div className="card">
-                    <i className="fa-solid fa-fish"></i>
-                    <span>Fish</span>
+                </Link>
+                <Link to={'/circular'} className="card">
+                    <i className="fa-solid fa-circle"></i>
+                    <span style={{marginTop:30}}>წრიული ფორმა</span>
                     <span className='view'>View</span>
-                </div>
-                <div className="card">
-                    <i className="fa-solid fa-water"></i>
-                    <span>Sea weed</span>
-                    <span className='view'>View</span>
-                </div>
+                </Link>
             </div>
         </div>
     );

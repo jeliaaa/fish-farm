@@ -3,6 +3,7 @@ import './App.css';
 import Main from './pages/main/Main';
 import Purchase from './pages/purchase/Purchase';
 import ContactUs from './pages/ContactUs';
+import Circular from './pages/circular/Circular';
 
 function App() {
   return (
@@ -14,24 +15,24 @@ function App() {
           </div>
           <nav>
             <ul className="nav-links">
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/purchase">Purchase</Link></li>
-              <li><Link to="/legacy">Legacy</Link></li>
-              <li><Link to="/ContactUs">Contact Us</Link></li>
+              <li><Link to="/">მთავარი</Link></li>
+              <li><Link to="/purchase">შეძენა</Link></li>
+              <li><Link to="/legacy">ჩვენ შესახებ</Link></li>
+              <li><Link to="/ContactUs">კონტაქტი</Link></li>
             </ul>
           </nav>
           <button className="register">
-              Call us
+              დაგვირეკეთ
           </button>
         </div>
 
       </header>
       <Routes>
         <Route index path='/' element={<Main />} />
-        <Route path='/purchase' element={<Purchase />} />
+        <Route path='/purchase' element={<Circular />} />
         <Route path='/ContactUs' element={<ContactUs />} />
-        <Route path='/' element={<Main />} />
-        <Route path='/' element={<Main />} />
+        <Route path='/circular' element={<Circular />} />
+        <Route path='/Farm' element={<Purchase />} />
       </Routes>
       <footer style={{height:'10dvh', justifyContent:'center', display:'flex', alignItems:'center'}}>All Rights Reserved &copy;</footer>
     </div>

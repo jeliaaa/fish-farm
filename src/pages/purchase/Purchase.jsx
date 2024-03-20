@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './purchase.scss'
 const Purchase = () => {
-    const [tab, setTab] = useState(0);
+    // const [tab, setTab] = useState(0);
     const [formData, setFormData] = useState({
         name: '',
         surname: '',
@@ -33,10 +33,8 @@ const Purchase = () => {
     return (
         <div className='Purchase'>
             <div className="tabs">
-                <div className={`tab ${tab === 0 ? 'active' : ''}`} onClick={() => setTab(0)}>Shrimp Farm</div>
-                <div className={`tab ${tab === 1 ? 'active' : ''}`} onClick={() => setTab(1)}>Fish Farm</div>
+                <div className='tab'>Fish Farm</div>
             </div>
-            {tab === 0 ?
                 <div className='fish_panel'>
                     <div className="form-container">
                         <form onSubmit={handleSubmit}>
@@ -69,21 +67,6 @@ const Purchase = () => {
                                 <label htmlFor="amount">Amount:</label>
                                 <input type="text" id="amount" name="amount" value={formData.amount} onChange={handleChange}  />
                             </div>
-
-                            <div className="form-group">
-                                <label htmlFor="size">Size:</label>
-                                <input type="text" id="size" name="size" value={formData.size} onChange={handleChange}  />
-                            </div>
-                            <label>
-                                Cost Range:
-                                <input type="range" name="costRange" min="0" max="100" value={formData.costRange} />
-                                {formData.costRange} {/* Display the current value */}
-                            </label>
-
-                            <div className="form-group">
-                                <label htmlFor="costRange">Cost Range:</label>
-                                <input type="text" id="costRange" name="costRange" value={formData.costRange} onChange={handleChange}  />
-                            </div>
                             <div className="form-group">
                                 <label htmlFor="country">Country:</label>
                                 <input type="text" id="country" name="country" value={formData.country} onChange={handleChange}  />
@@ -105,11 +88,6 @@ const Purchase = () => {
                         </form>
                     </div>
                 </div>
-                :
-                <div className='shrimp_panel'>
-
-                </div>
-            }
         </div>
     )
 }
