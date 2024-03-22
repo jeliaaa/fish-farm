@@ -2,8 +2,11 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 80dvh;
+    height: 100dvh;
     padding: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .pricing-card {
@@ -16,12 +19,20 @@
     height: 70%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+}
+.description{
+    color: black;
+    text-align: left;
+    display: none;
 }
 .pricing-card:hover{
     transform: translateY(-50px);
-    transition: transform 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+    .description{
+        display: block;
+    }
 }
 .pricing-card h2 {
     color: #333;

@@ -53,12 +53,12 @@ const Main = () => {
                 <Link to={'/rectangle'} className="card">
                     <i className="fa-solid fa-square"></i>
                     <span style={{marginTop:30}}>კვადრატული ფორმა</span>
-                    <span className='view'>View</span>
+                    <span className='view'>ნახვა</span>
                 </Link>
                 <Link to={'/circular'} className="card">
                     <i className="fa-solid fa-circle"></i>
                     <span style={{marginTop:30}}>წრიული ფორმა</span>
-                    <span className='view'>View</span>
+                    <span className='view'>ნახვა</span>
                 </Link>
             </div>
         </div>

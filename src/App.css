@@ -18,12 +18,8 @@ header {
   width: 30%;
   height: fit-content;
   font-size: larger;
-  color: rgb(150, 150, 5);
+  color: white;
   margin-left: 40px;
-}
-
-.logo span {
-  color: cadetblue;
 }
 
 header .wrap {
@@ -31,12 +27,13 @@ header .wrap {
   height: 100%;
   align-items: center;
   justify-content: space-evenly;
-  background-color: rgb(200, 196, 192);
+  background-color: rgb(14, 14, 80);
 }
 
 nav {
   width: 50%;
   display: flex;
+  color: white;
 }
 
 nav ul {
