@@ -2,6 +2,7 @@ import React from 'react';
 import './circular.scss'; // Import the CSS file for styling
 import img from '../../assets/farmJust.webp'
 import im2 from '../../assets/cagePro.png'
+import im3 from '../../assets/promax.jpg'
 import bg from '../../assets/bg.png'
 import { Link } from 'react-router-dom';
 
@@ -24,7 +25,7 @@ const Circular = () => {
         <div className="pricing-cards-container" style={{backgroundImage:`url(${bg})`}}>
             <PricingCard descriprion={<span>ბადე-კარკასი</span>} imgg={img} title="Farm" price={6000} />
             <PricingCard descriprion={<ul><li>ბადე-კარკასი</li><li>წყლის მონიტორინგი</li><li>კამერა</li><li>კვების სისტემა</li></ul>} imgg={im2} title="Farm Pro" price={8000} />
-            <PricingCard descriprion={<ul><li>ბადე-კარკასი</li><li>წყლის მონაცემები</li><li>კამერა</li><li>კვების სისტემა</li><li>AI ბადის მონიტორინგი</li><li>თვითწმენდა</li></ul>} imgg={img} title="Farm Pro Max" price={11000} />
+            <PricingCard descriprion={<ul><li>ბადე-კარკასი</li><li>წყლის მონაცემები</li><li>კამერა</li><li>კვების სისტემა</li><li>AI ბადის მონიტორინგი</li><li>თვითწმენდა</li></ul>} imgg={im3} title="Farm Pro Max" price={11000} />
         </div>
     );
 };

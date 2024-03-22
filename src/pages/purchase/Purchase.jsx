@@ -39,51 +39,51 @@ const Purchase = () => {
                     <div className="form-container">
                         <form onSubmit={handleSubmit}>
                             <div className="form-group">
-                                <label htmlFor="name">Name:</label>
+                                <label htmlFor="name">სახელი:</label>
                                 <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} />
                             </div>
 
                             <div className="form-group">
-                                <label htmlFor="surname">Surname:</label>
+                                <label htmlFor="surname">გვარი:</label>
                                 <input type="text" id="surname" name="surname" value={formData.surname} onChange={handleChange}  />
                             </div>
 
                             <div className="form-group">
-                                <label htmlFor="purpose">Purpose:</label>
+                                <label htmlFor="purpose">მიზანი:</label>
                                 <input type="text" id="purpose" name="purpose" value={formData.purpose} onChange={handleChange}  />
                             </div>
 
                             <div className="form-group">
-                                <label htmlFor="residence">Place of Residence:</label>
+                                <label htmlFor="residence">ლოკაცია:</label>
                                 <input type="text" id="residence" name="residence" value={formData.residence} onChange={handleChange}  />
                             </div>
 
                             <div className="form-group">
-                                <label htmlFor="species">Species:</label>
+                                <label htmlFor="species">მოსაშენებელი ჯიში:</label>
                                 <input type="text" id="species" name="species" value={formData.species} onChange={handleChange}  />
                             </div>
 
                             <div className="form-group">
-                                <label htmlFor="amount">Amount:</label>
+                                <label htmlFor="amount">რაოდენობა:</label>
                                 <input type="text" id="amount" name="amount" value={formData.amount} onChange={handleChange}  />
                             </div>
                             <div className="form-group">
-                                <label htmlFor="country">Country:</label>
+                                <label htmlFor="country">ქვეყანა:</label>
                                 <input type="text" id="country" name="country" value={formData.country} onChange={handleChange}  />
                             </div>
 
                             <div className="form-group">
-                                <label htmlFor="email">Gmail:</label>
+                                <label htmlFor="email">ელ. ფოსტა:</label>
                                 <input type="email" id="email" name="email" value={formData.email} onChange={handleChange}  />
                             </div>
 
                             <div className="form-group">
-                                <label htmlFor="telephone">Telephone:</label>
+                                <label htmlFor="telephone">მობილური:</label>
                                 <input type="tel" id="telephone" name="telephone" value={formData.telephone} onChange={handleChange}  />
                             </div>
 
                             <div className="form-group">
-                                <input type="submit" onClick={() => alert("We will contact you in 3-4 bussiness days! Thank You :0")} />
+                                <input type="submit" onClick={() => alert("შეამოწმეთ ელ. ფოსტა, ჩვენ მალევე შეგეხმიანებით")} />
                             </div>
                         </form>
                     </div>
