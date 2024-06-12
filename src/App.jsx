@@ -16,8 +16,6 @@ function App() {
           <nav>
             <ul className="nav-links">
               <li><Link to="/">მთავარი</Link></li>
-              <li><Link to="/purchase">შეძენა</Link></li>
-              <li><Link to="/legacy">ჩვენ შესახებ</Link></li>
               <li><Link to="/ContactUs">კონტაქტი</Link></li>
             </ul>
           </nav>
