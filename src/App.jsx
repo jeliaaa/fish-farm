@@ -21,9 +21,6 @@ function App() {
               <li><Link to="/ContactUs">კონტაქტი</Link></li>
             </ul>
           </nav>
-          <button className="register">
-              დაგვირეკეთ
-          </button>
         </div>
 
       </header>
