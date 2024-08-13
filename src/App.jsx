@@ -4,6 +4,7 @@ import Main from './pages/main/Main';
 import Purchase from './pages/purchase/Purchase';
 import ContactUs from './pages/ContactUs';
 import Circular from './pages/circular/Circular';
+import FarmDemo from './pages/demos/FarmDemo';
 
 function App() {
   return (
@@ -20,7 +21,6 @@ function App() {
             </ul>
           </nav>
         </div>
-
       </header>
       <Routes>
         <Route index path='/' element={<Main />} />
@@ -28,6 +28,7 @@ function App() {
         <Route path='/ContactUs' element={<ContactUs />} />
         <Route path='/circular' element={<Circular />} />
         <Route path='/Farm' element={<Purchase />} />
+        <Route path='/farm-demo' element={<FarmDemo />} />
       </Routes>
       <footer style={{height:'10dvh', justifyContent:'center', display:'flex', alignItems:'center'}}>All Rights Reserved &copy;</footer>
     </div>

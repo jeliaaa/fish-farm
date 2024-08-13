@@ -5,6 +5,7 @@ import './main.scss';
 import farmImg from '../../assets/farm.png'
 import buoyImg from '../../assets/buioki.png'
 import forumImg from '../../assets/forum.png'
+import { Link } from 'react-router-dom';
 
 const Main = () => {
     const handleScrollDown = () => {
@@ -84,7 +85,10 @@ const Main = () => {
                 <img src={farmImg} alt="Descriptive Alt Text" className="responsive-card__image" />
                 <div className="responsive-card__text">
                     <h1>ჭკვიანი თევზის ფერმა</h1>
-                    <p>ფერმა ხდება სრულიად დამოუკიდებელი ჩვენი მოწყობილობის საშუალებით, რომელსაც აქვს საშუალება აიღოს დინების შესახებ მონაცემი, მიიღოს მიმართულება, მოძებნოს ოპტიმალური საჭმლის განთავსების ადგილი და ჩამოყაროს საჭმელი ისეთ ადგილას სადაც მაქსიმალურად მცირეა გაფლანგვა.</p>
+                    <p>ფერმა ხდება სრულიად დამოუკიდებელი ჩვენი მოწყობილობის საშუალებით, რომელსაც აქვს საშუალება აიღოს დინების შესახებ მონაცემი, მიიღოს მიმართულება, მოძებნოს ოპტიმალური საჭმლის განთავსების ადგილი და ჩამოყაროს საჭმელი ისეთ ადგილას სადაც მაქსიმალურად მცირეა გაფლანგვა.
+                        <br /><br />
+                        <Link to='/farm-demo'>იხ. დემო ვერსია</Link>
+                    </p>
                 </div>
             </div>
             <div className="responsive-card">
@@ -94,7 +98,7 @@ const Main = () => {
                         ტივტივა, რომელიც აგროვებს ინფორმაციას წყალზე და აწვდის მას მფლობელს, ამ ტივტივას აქვს უნარი სრაფად განაახლოს აუცილებელი ინფორმაცია წყალზე. სამომავლოდ, იგეგმება ტივტივას მონაცემი დაკავშირდეს ვებსაიტზე რომელიც თავისუფალ წვდომაში იქნება ყველა მომხმარებლისთვის და სადაც დაგროვდება ინფორმაცია. ამას მოჰყვება ერთგვარი ფორუმის ჩამოყალიბება.
                         <br /> იხ. ვებსაიტი <a style={{ textDecoration: 'underline' }} href='https://nasadata.vercel.app'>ბმული</a>
                         <br /> და ასევე ფორუმი, რომელიც ჯერ კიდევ მზადების პროცესშია:
-                        <img src={forumImg} alt='forum' style={{width:"90%", marginTop:20}} />
+                        <img src={forumImg} alt='forum' style={{ width: "90%", marginTop: 20 }} />
                     </p>
 
                 </div>
