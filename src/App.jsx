@@ -28,7 +28,7 @@ function App() {
         <Route path='/ContactUs' element={<ContactUs />} />
         <Route path='/circular' element={<Circular />} />
         <Route path='/Farm' element={<Purchase />} />
-        <Route path='/farm-demo' element={<FarmDemo />} />
+        <Route path='/demos/:id' element={<FarmDemo />} />
       </Routes>
       <footer style={{height:'10dvh', justifyContent:'center', display:'flex', alignItems:'center'}}>All Rights Reserved &copy;</footer>
     </div>

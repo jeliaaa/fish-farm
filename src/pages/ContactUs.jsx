@@ -3,18 +3,23 @@ import React from 'react';
 const ContactUs = () => {
     const teamMembers = [
         { 
-            name: 'John Doe', 
-            role: 'CEO', 
+            name: 'ალექსანდრე ჯელია', 
             photo: 'https://via.placeholder.com/100'
         },
         { 
-            name: 'Jane Smith', 
-            role: 'CTO', 
+            name: 'გიორგი გობაძე',
             photo: 'https://via.placeholder.com/100'
         },
         { 
-            name: 'Emily Johnson', 
-            role: 'CFO', 
+            name: 'ნიკოლოზ აბულაძე', 
+            photo: 'https://via.placeholder.com/100'
+        },
+        { 
+            name: 'ელისაბედ გეგეშიძე', 
+            photo: 'https://via.placeholder.com/100'
+        },
+        { 
+            name: 'მართა თოდუა', 
             photo: 'https://via.placeholder.com/100'
         },
     ];
@@ -27,7 +32,7 @@ const ContactUs = () => {
                     <div key={index} style={styles.teamMember}>
                         <img src={member.photo} alt={member.name} style={styles.photo} />
                         <h3 style={styles.name}>{member.name}</h3>
-                        <p style={styles.role}>{member.role}</p>
+                        {/* <p style={styles.role}>{member.role}</p> */}
                     </div>
                 ))}
             </div>
